@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RAJA</Machine>
+    <WindowsUser>Raja</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>7725RajaT.PowerCalculatorforHAWT</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>111EEFE7DF878C2C85788E7EBF3E847F415BCE01D9A11865D72CCA4F4BC81406</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>7725RajaT.PowerCalculatorforHAWT_1.1.0.0_neutral__s94zbj6kwf7rw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>7725RajaT.PowerCalculatorforHAWT_s94zbj6kwf7rw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>7725RajaT.PowerCalculatorforHAWT</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=C3C72738-43D8-4CF2-A217-3AB2FD1D6B6C</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-03-07T23:08:25.115</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Power.exe">
+      <PackagePath>Power.exe</PackagePath>
+      <Modified>2016-03-07T23:08:23.337</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2014-12-10T05:08:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2014-12-10T05:08:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\Background.png">
+      <PackagePath>Assets\Background.png</PackagePath>
+      <Modified>2015-09-13T09:47:37.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\SquareLogo150x150.png">
+      <PackagePath>Assets\SquareLogo150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-09-19T08:35:42.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\SquareLogo30x30.png">
+      <PackagePath>Assets\SquareLogo30x30.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-09-19T08:35:42.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\StoreLogo50x50.png">
+      <PackagePath>Assets\StoreLogo50x50.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-09-19T08:35:42.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <Modified>2013-07-22T18:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\WideLogo 310x150.png">
+      <PackagePath>Assets\WideLogo 310x150.png</PackagePath>
+      <Modified>2015-09-21T08:49:14.672</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\Assets\SplashScreen.jpg">
+      <PackagePath>Assets\SplashScreen.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-09-19T09:13:13.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Power.xr.xml">
+      <PackagePath>Power.xr.xml</PackagePath>
+      <Modified>2016-03-07T23:08:22.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-09-15T06:15:41.140</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-09-15T06:15:41.140</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-03-07T23:08:24.760</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

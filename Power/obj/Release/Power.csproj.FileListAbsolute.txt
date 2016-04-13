@@ -1,0 +1,70 @@
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\App.xbf
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\MainPage.xbf
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\Power.xr.xml
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\Power.exe
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\Power.pdb
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\resources.pri
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\AppxManifest.xml
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\Power.build.appxrecipe
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\Microsoft.Xaml.Interactions.dll
+E:\CPP - DSD\MSA\Projects\Power\Power\bin\Release\Microsoft.Xaml.Interactivity.dll
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\App.g.i.cs
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\App.g.cs
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\MainPage.g.i.cs
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\MainPage.g.cs
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\XamlTypeInfo.g.cs
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\App.xaml
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\MainPage.xaml
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\App.xbf
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\MainPage.xbf
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\XamlSaveStateFile.xml
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\Power.exe
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\Power.pdb
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\Power.csproj.GenerateResource.Cache
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\priconfig.xml
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\priconfig.xml.intermediate
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\layout.resfiles
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\layout.resfiles.intermediate
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\resources.resfiles
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\resources.resfiles.intermediate
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\pri.resfiles
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\pri.resfiles.intermediate
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\qualifiers.txt
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\qualifiers.txt.intermediate
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\MultipleQualifiersPerDimensionFound.txt
+E:\CPP - DSD\MSA\Projects\Power\Power\obj\Release\ProjectArchitectures.txt
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\App.xbf
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\MainPage.xbf
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Power.xr.xml
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Power.exe
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Power.pdb
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\resources.pri
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\AppxManifest.xml
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Power.build.appxrecipe
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Microsoft.Xaml.Interactions.dll
+C:\Users\Raja\OneDrive\Documents\Power\Power\bin\Release\Microsoft.Xaml.Interactivity.dll
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\App.g.i.cs
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\App.g.cs
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\MainPage.g.i.cs
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\MainPage.g.cs
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\XamlTypeInfo.g.cs
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\App.xaml
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\MainPage.xaml
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\App.xbf
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\MainPage.xbf
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\XamlSaveStateFile.xml
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\Power.exe
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\Power.pdb
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\Power.csproj.GenerateResource.Cache
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\priconfig.xml
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\priconfig.xml.intermediate
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\layout.resfiles
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\layout.resfiles.intermediate
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\resources.resfiles
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\resources.resfiles.intermediate
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\pri.resfiles
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\pri.resfiles.intermediate
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\qualifiers.txt
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\qualifiers.txt.intermediate
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Raja\OneDrive\Documents\Power\Power\obj\Release\ProjectArchitectures.txt

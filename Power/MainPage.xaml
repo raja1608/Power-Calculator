@@ -1,0 +1,242 @@
+﻿<Page
+    x:Class="Power.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Power"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" 
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core" 
+    xmlns:Media="using:Microsoft.Xaml.Interactions.Media" x:Name="page"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Background" Value="Coral"/>
+            <Setter Property="BorderBrush" Value="Chocolate"/>
+        </Style>
+        
+    </Page.Resources>
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Background.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock x:Name="HeaderText" Text="Power Calculator for HAWT" Grid.Row="0"
+                   FontSize="40"  FontStyle="Italic" FontStretch="Expanded"  FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,30,0,20" 
+                   Foreground="OrangeRed"/>
+        
+        <Grid x:Name="ContentGrid" Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.Resources>
+                <Style x:Key="ContentTextBox" TargetType="TextBox">
+                    <Setter Property="Width" Value="150"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Margin" Value="10,10,0,10"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="Background" Value="LightCyan"/>
+                    <Setter Property="FontStyle" Value="Oblique"/>
+                    <Setter Property="FontWeight" Value="Medium"/>
+                </Style>
+
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="25"/>
+                    <Setter Property="Foreground" Value="AntiqueWhite"/>
+                </Style>
+
+                <Style TargetType="TextBlock" x:Key="ResultTextBlock">
+                    <Setter Property="Height" Value="50"/>
+                    <Setter Property="HorizontalAlignment" Value="Left"/>
+                    <Setter Property="TextAlignment" Value="Center"/>
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="FontStretch" Value="Expanded"/>
+                </Style>
+
+            </Grid.Resources>
+            
+            <StackPanel x:Name="Leftpanel" Grid.Column="0" Margin="10,40,0,0">
+               
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Height of the Anemometer From Ground" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="480" />
+                    <TextBox x:Name="txtAnemometerHeight" Style="{StaticResource ContentTextBox}" 
+                             ToolTipService.ToolTip="Enter the height of the Anemometer from the surface in meters">
+                        <Interactivity:Interaction.Behaviors>
+                            <local:NumericTextBoxBehavior AllowDecimal="True"/>
+                        </Interactivity:Interaction.Behaviors>
+                    </TextBox>
+                    <TextBlock Text="m" Margin="10,10,0,10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Specified Height of the Wind" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="480" />
+                    <TextBox x:Name="txtReqHeight" Style="{StaticResource ContentTextBox}" 
+                             ToolTipService.ToolTip=
+                             "Enter the height of the wind in meters at which the Wind speed and Power density to be calculated">
+                        <Interactivity:Interaction.Behaviors>
+                            <local:NumericTextBoxBehavior AllowDecimal="True"/>
+                        </Interactivity:Interaction.Behaviors>
+                    </TextBox>
+                    <TextBlock Text="m" Margin="10,10,0,10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Wind Speed from the Anemometer" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="480" />
+                    <TextBox x:Name="txtWindSpeed" Style="{StaticResource ContentTextBox}" 
+                             ToolTipService.ToolTip="Enter the wind speed reading from the Anemometer in meter per second">
+                        <Interactivity:Interaction.Behaviors>
+                            <local:NumericTextBoxBehavior AllowDecimal="True"/>
+                        </Interactivity:Interaction.Behaviors>
+                    </TextBox>
+                    <TextBlock Text="m/s" Margin="10,10,0,10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Terrain Characteristics" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="280" />
+                    <ComboBox x:Name="cmbxTerrainChar" Margin="10,10,0,10" Width="350" FontSize="15" FontStyle="Italic"
+                              FontWeight="Medium" ToolTipService.ToolTip=
+                              "Click here to select the terrain characteristics of the surface">
+                        <x:String>Smooth hard ground, calm water</x:String>
+                        <x:String> Tall grass on level ground </x:String>
+                        <x:String> High crops, hedges and shrubs </x:String>
+                        <x:String> Wooded countryside, many trees</x:String>
+                        <x:String> Small town with trees and shrubs</x:String>
+                        <x:String> Large city with tall buildings</x:String>
+                    </ComboBox>
+                </StackPanel>
+
+                <CheckBox x:Name="chBoxDefault"  Margin="20,30,10,0" Content=" Not at Temperature 15⁰C and Pressure 1 atm "
+                          FontSize="25" Foreground="AntiqueWhite" Click="chBoxDefault_Click" 
+                          ToolTipService.ToolTip="Select this if the Air Density is not the default value"/>
+
+                <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                    <TextBlock Text=" Wind Temperature" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="480" />
+                    <ComboBox x:Name="cmbxWindTemperature" Margin="10,10,0,10" FontSize="15" FontStyle="Italic"
+                             Width="150" FontWeight="Medium" IsEnabled="False" 
+                              ToolTipService.ToolTip="Click here to select the temperature of the wind in C">
+                        <x:String>-15</x:String>
+                        <x:String>-10</x:String>
+                        <x:String>-5</x:String>
+                        <x:String>0</x:String>
+                        <x:String>5</x:String>
+                        <x:String>10</x:String>
+                        <x:String>15</x:String>
+                        <x:String>20</x:String>
+                        <x:String>25</x:String>
+                        <x:String>30</x:String>
+                        <x:String>35</x:String>
+                        <x:String>40</x:String>
+                    </ComboBox>
+                    <TextBlock Text="C" Margin="10,10,0,10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Wind Altitude" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="480" />
+                    <ComboBox x:Name="cmbxWindAltitude" Margin="10,10,0,10" FontSize="15" FontStyle="Italic"
+                             Width="150" FontWeight="Medium" IsEnabled="False" 
+                              ToolTipService.ToolTip="Click here to select the altitude of the wind in meters">
+                        <x:String>0</x:String>
+                        <x:String>200</x:String>
+                        <x:String>400</x:String>
+                        <x:String>600</x:String>
+                        <x:String>800</x:String>
+                        <x:String>1000</x:String>
+                        <x:String>1200</x:String>
+                        <x:String>1400</x:String>
+                        <x:String>1600</x:String>
+                        <x:String>1800</x:String>
+                        <x:String>2000</x:String>
+                        <x:String>2200</x:String>
+                    </ComboBox>
+                    <TextBlock Text="m" Margin="10,10,0,10"/>
+                </StackPanel>
+
+            </StackPanel>
+            
+            <StackPanel x:Name="RightPanel" Grid.Column="1" Margin="10,40,0,0" Width="620">
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Blade Rotor Diameter" Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="380" />
+                    <TextBox x:Name="txtRotorDia" Style="{StaticResource ContentTextBox}" 
+                             ToolTipService.ToolTip="Enter the diameter of the rotor blade in meter">
+                        <Interactivity:Interaction.Behaviors>
+                            <local:NumericTextBoxBehavior AllowDecimal="True"/>
+                        </Interactivity:Interaction.Behaviors>
+                    </TextBox>
+                    <TextBlock Text="m" Margin="10,10,0,10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text=" Turbine Efficiency " Margin="10,10,0,10" HorizontalAlignment="Left" 
+                       Width="380" />
+                    <TextBox x:Name="txtTurbineEfficiency" Style="{StaticResource ContentTextBox}" 
+                             ToolTipService.ToolTip="Enter the efficiency of the turbine in decimal value. Like 0.50 for 50%">
+                        <Interactivity:Interaction.Behaviors>
+                            <local:NumericTextBoxBehavior AllowDecimal="True"/>
+                        </Interactivity:Interaction.Behaviors>
+                    </TextBox>
+                    <TextBlock Text="%" Margin="10,10,0,10"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text=" Estimated Wind Speed at the Height of " Margin="20,20,0,10"  Width="450" HorizontalAlignment="Left" />
+                    <TextBlock x:Name="bkHeight" Width="auto" Margin="0,20,5,10" HorizontalAlignment="Left" TextAlignment="Center"/>
+                    <TextBlock x:Name="bkHeightUnit" Text="m is" Margin="0,20,0,10" Visibility="Collapsed"/>
+                </StackPanel>
+                
+                <TextBlock x:Name="txtBlkWindSpeed" Width="500" Margin="20,10,0,10" Style="{StaticResource ResultTextBlock}"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text=" Average Power Density at the Height of " Margin="20,20,0,10"  Width="450" HorizontalAlignment="Left" />
+                    <TextBlock x:Name="bkHeight1" Width="auto" Margin="0,20,5,10" HorizontalAlignment="Left" TextAlignment="Center"/>
+                    <TextBlock x:Name="bkHeightUnit1" Text="m is" Margin="0,20,0,10" Visibility="Collapsed"/>
+                </StackPanel>
+                
+                <TextBlock x:Name="txtBlkPowerDensity" Width="500" Margin="20,10,0,0" Style="{StaticResource ResultTextBlock}"/>
+
+                <TextBlock Text=" Annual Energy Delivered " Margin="20,20,0,10"  Width="Auto" />
+                <TextBlock x:Name="txtBlkEnergyDelivered" Width="300" Margin="20,10,0,10" Style="{StaticResource ResultTextBlock}"/>
+
+            </StackPanel>
+            
+        </Grid>
+        
+        <StackPanel x:Name="ButtonPanel" Grid.Row="2" Orientation="Horizontal" Margin="20,10,0,20">
+            <Button x:Name="btnWindSpeed" Content="Estimate Wind Speed" Margin="0,10,40,0" Click="btnWindSpeed_Click"/>
+            <Button x:Name="btnPowerDensity" Content=" Average Power Density" Margin="0,10,40,0" IsEnabled="False" Click="btnPowerDensity_Click"/>
+            <Button x:Name="btnEnergyDelivered" Content="Annual Energy Delivered" Margin="0,10,40,0" IsEnabled="False" Click="btnEnergyDelivered_Click" />
+            <Button x:Name="btnClear" Content="Clear" Margin="0,10,0,0" Click="btnClear_Click" Width="290" />
+        </StackPanel>
+        
+    </Grid>
+</Page>
